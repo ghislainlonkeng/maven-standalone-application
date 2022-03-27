@@ -35,6 +35,22 @@
 
 	</dependencies>
 
+	
+	<distributionManagement>
+		<repository>
+                <id>nexus</id>
+                <name>Landmark Technolegies Releases Nexus</name>
+			<url>http://3.88.33.128:8081/#admin/repository/repositories:Ebay-bts-releases</url>
+                </repository>
+		
+		<snapshotRepository>
+                <id>nexus</id>
+                <name>Landmark Technolegies Snapshot Nexus</name>
+			<url>http://3.88.33.128:8081/#admin/repository/repositories:Ebay-bts-snapshot</url>
+                </snapshotRepository>
+	
+            </distributionManagement> 
+		
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
 		mvn scm:update -->
